@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header {
+	background: linear-gradient(135deg, rgba(131,58,180,1) 0%,
+									    rgba(253,29,29,1) 50%,
+									    rgba(252,176,69,1) 100%);
+	padding: 30px 40px;
+	color: white;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Acme', 'sans-serif';
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+}
+
+	/* Input area */
+.input__area {
+	display: flex;
+}
+
+.input {
+	width: 75%;
+	padding: 10px;
+	border: none;
+	font-size: 14px;
+	margin-right: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	outline: none;
+}
+
+.add__btn {
+	width: 25%;
+	padding: 10px;
+	font-size: 14px;
+	margin-left: 0;
+	border: none;
+	background: #d9d9d9;
+	color: #555;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.3s;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+}
+
+.add__btn:hover {
+	background: #bbb;
+	color: #FFF;
+}
+
+	/* Li Item */
+.li__item {
+	cursor: pointer;
+	list-style-type: none;
+	background: #eee;
+	padding: 12px 60px 12px 40px;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	transition: 0.2s;
+	position: relative;
+
+	/* make the list item unselectable */
+
+	/* -webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; */
+}
+
+.li__item:nth-child(even) {
+	background: #ddd;
+}
+
+
+
+.li__item:hover {
+	background: #b2bec3;
+}
+
+.done {
+	background: #b2bec3 !important;
+}
+
+.done::before {
+	content: "\f00c";
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	margin-top: -12px;
+
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style: normal;
+    text-decoration:none;
+	color: green;
+	font-size: 20px;
+}
+
+
+	/* Trash Bin */
+.fas {
+	position: absolute;
+	right: 37px;
+	top: 50%;
+	margin-top: -10px;
+	color: #818181;
+	padding: 3px;
+	transition: 0.2s;
+}
+
+.fas:hover {
+	color: black;
+}
